@@ -14,6 +14,7 @@ public interface IValueData<E> {
 	
 	void setValue(E value);
 	
+	
 	IValueData<Object> NullValue = new IValueData<Object>() {
 		
 		@Override
@@ -24,6 +25,11 @@ public interface IValueData<E> {
 		@Override
 		public void setValue(Object value) {
 			
+		}
+		
+		@Override
+		public String toString() {
+			return "null";
 		}
 	};
 	
